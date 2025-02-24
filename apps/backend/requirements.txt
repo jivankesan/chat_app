@@ -1,0 +1,42 @@
+my_fastapi_project/
+├── app/
+│   ├── __init__.py
+│   ├── main.py                  # Entry point for FastAPI app
+│   ├── config.py               # Holds environment variables, constants
+│   ├── database.py             # SQLAlchemy engine/session
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── user.py
+│   │   ├── chat_session.py
+│   │   ├── chat_message.py
+│   │   └── document.py
+│   ├── schemas/
+│   │   ├── __init__.py
+│   │   ├── user_schemas.py
+│   │   ├── chat_schemas.py
+│   │   └── ...
+│   ├── services/
+│   │   ├── __init__.py
+│   │   ├── openai_client.py
+│   │   ├── text_processor.py
+│   │   ├── embeddings_manager.py
+│   │   ├── file_service.py
+│   │   ├── chat_service.py
+│   │   └── text_extractor.py
+│   ├── routers/
+│   │   ├── __init__.py
+│   │   ├── auth.py
+│   │   ├── chat.py
+│   │   ├── upload.py
+│   │   ├── ask_question.py
+│   │   └── ...
+│   └── utils.py
+├── tests/
+│   ├── __init__.py
+│   ├── test_users.py
+│   ├── test_chat.py
+│   └── ...
+├── .env
+├── requirements.txt
+├── Dockerfile
+└── README.md
