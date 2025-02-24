@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light chat area background */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f8;
+  color: #202123;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+a {
+  color: #4d4d4d;
+}
+
+::selection {
+  background-color: #cce7ff;
+  color: #202123;
+}
+
+/* Basic scrollbars (optional) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+  border-radius: 4px;
+}
